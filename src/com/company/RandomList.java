@@ -18,9 +18,10 @@ public class RandomList{
         return list;
     }
 
-    public static void afficher(ArrayList<Comparable> list){
+    public static void print(ArrayList<Comparable> list){
         for(int i = 0; i < list.size(); i++){
             System.out.print(list.get(i) + " ");
         }
+        System.out.println();
     }
 }

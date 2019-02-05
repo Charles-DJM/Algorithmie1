@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 //TODO: Tri Rapide, Tri par base, tri par fusion(en utilisant linkedList)
 
@@ -8,11 +9,16 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        ArrayList list = new RandomList().generate(10, 20);
-        RandomList.afficher(list);
-        ArrayList<Comparable> sortedList = list.clone();
-        System.out.println();
-        RandomList.afficher(sortedList);
+        ArrayList list = new RandomList().generate(16, 20);
+        RandomList.print(list);
+        //ArrayList<Comparable> sortedList = (ArrayList<Comparable>)list.clone();
+
+        //SortBubble.sort(list);
+        //RandomList.print(list);
+        LinkedList<Comparable> l_fusion = new LinkedList<Comparable>(list);
+        SortFusion.sort(l_fusion);
+        ArrayList<Comparable> l = new ArrayList<>(l_fusion);
+        RandomList.print(l);
 
     }
 }
