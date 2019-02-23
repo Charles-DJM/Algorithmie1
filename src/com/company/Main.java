@@ -3,7 +3,7 @@ package com.company;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-//TODO: Tri Rapide, Tri par base, tri par fusion(en utilisant linkedList)
+//TODO: Tri Rapide, Tri par base
 
 
 public class Main {
