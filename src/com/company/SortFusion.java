@@ -27,7 +27,7 @@ public class SortFusion {
             return s1;
         LinkedList<Comparable> newList = new LinkedList<>();
 
-        while(s1.peekFirst() != NULL  && s2.peekFirst() != NULL){
+        while(true){//s1.peekFirst() != NULL  && s2.peekFirst() != NULL
 
             if(s1.size() == 0){
                 newList.addAll(s2);
@@ -43,6 +43,6 @@ public class SortFusion {
             else
                 newList.add(s2.pop());
         }
-        return newList;
+        //return newList;
     }
 }
