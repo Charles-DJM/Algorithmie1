@@ -9,11 +9,7 @@ public class SortFusion {
     public static LinkedList<Comparable> sort(LinkedList<Comparable> list){
         if(list.size() > 1){
             LinkedList<Comparable> s1 = new LinkedList<>(list.subList(0, list.size()/2));
-
             LinkedList<Comparable> s2 = new LinkedList<>(list.subList(list.size()/2, list.size()));
-
-            //LinkedList<Comparable> s1 = SortFusion.sort((LinkedList<Comparable>)list.subList(0, list.size()/2));
-            //LinkedList<Comparable> s2 = SortFusion.sort((LinkedList<Comparable>)list.subList(list.size()/2 +1, list.size()));
             return fusion(SortFusion.sort(s1), SortFusion.sort(s2));
         }
         return list;
